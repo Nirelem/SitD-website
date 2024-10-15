@@ -7,6 +7,8 @@
     <style> 
         body{
             background-color: #FFEFD5
+            /*background-image: url('/images/planetarium.png');
+            background-repeat: no-repeat;*/
         }   
         p{
             color:black
@@ -45,10 +47,23 @@
 
         <h1>  Game Map  </h1>
     </header>
-    <p> This website is our main repository hub for all things related to our game. <br/>
-        The main feature (and primary reason for me making this website) is the <br/> 
-        interactive map, which I couldn't do in places like Notion or Obsidian 
+    <p> This is the interactive map. (WIP)
+        <br/> Click on provinces to zoom in on that province. 
+        <br/> Click on markers to gain more info on that location.
     </p>
+    
+    <button id="1" style="margin:10px" data-type="/images/map_color.webp" onclick="changeMap(1)">  Province Map  </button>
+    <button id="2" style="margin:10px" data-type="/images/map_cart.webp" onclick="changeMap(2)">  Cartography Map  </button>
+    <script>    
+        function changeMap(mapNum){
+            var mapType = document.getElementById(mapNum).getAttribute("data-type")
+            document.getElementById("gameMap").src = mapType
+        }
+    </script>
+    
+    <div>
+        <img id="gameMap" src="/images/map_color.webp" style="height:800px;display:block;margin:auto">
+    </div>
     <br/>
     <h6>  Made by NirelemCorp TM  </h6>
 </body>
