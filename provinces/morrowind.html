@@ -12,12 +12,11 @@
             color:black
         }
 
-        li{
+        li.navbar{
             float: left;
-            
         }
 
-        li a{
+        li.navbar a{
             display: block;
             color: white;
             text-align: center;
@@ -25,7 +24,7 @@
             text-decoration: none;
         }
 
-        li a:hover{
+        li.navbar a:hover{
             background-color: aqua;
         }
 
@@ -48,17 +47,19 @@
     <header>
         <nav>
             <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
-              <li>    <a href="../index.html"> Home              </a>  </li>
-              <li>    <a href="../map.html"> Map                 </a>  </li>
-              <li>    <a href="../logs.html"> Session Logs       </a>  </li> 
-              <li>    <a href="../lore.html"> Lore               </a>  </li>
-              <li>    <a href="../characters.html"> Characters   </a>  </li>
-              <li>    <a href="../about.html"> About             </a>  </li>
+              <li class="navbar">    <a href="../index.html"> Home              </a>  </li>
+              <li class="navbar">    <a href="../map.html"> Map                 </a>  </li>
+              <li class="navbar">    <a href="../logs.html"> Session Logs       </a>  </li> 
+              <li class="navbar">    <a href="../lore.html"> Lore               </a>  </li>
+              <li class="navbar">    <a href="../characters.html"> Characters   </a>  </li>
+              <li class="navbar">    <a href="../about.html"> About             </a>  </li>
             </ul>
         </nav>
 
         <h1>  Morrowind  </h1>
     </header>
+
+    <a href="../map.html"> <button style="margin: 10px;">Go Back</button></a>
 
     <div>
         <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" viewBox="0 0 2048 1536" sodipodi:docname="morrowind1.svg" inkscape:version="1.4 (86a8ad7, 2024-10-11)">
@@ -159,9 +160,175 @@
             </g>
           </svg>
     </div>
-    <p> 
-        Important info about the province of Morrowind
-    </p>
+    
+    <div>
+      <h2 style="margin-bottom: 1px;">
+          Summary:
+      </h2>
+          <ul style="list-style-type: none;">
+            <li style="float: none;"><p>Homeland of the Dark Elves/Dunmer.</p></li>
+            <li style="float: none;"><p>Makes up the southwesstern part of Tamriel. </p></li>
+            <li style="float: none;"><p>The land of Morrowind is the most alien-looking in Tamriel, as if it were another planet.</p></li>
+            <li style="float: none;"><p>Borders Skyrim to the west, Cyrodiil to the southwest, and Black Marsh to the south.</p></li>
+          </ul>
+      </div>
+
+      <div style="float: right; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+        <div>
+          <p style="margin: 0px; font-size: 20px; text-align: center; margin-bottom: 3px;"><a href="../lore/dunmer.html">Dark Elves</a></p>
+        </div>
+        <a href="../images/dunmer.png">
+        <img src="../images/dunmer.png" style=" width: 100%;  border:1px solid grey;">
+        </a>
+        <div>
+          <p style="margin: 0px; font-size: 14px;">Illustration of a Dunmer male</p>
+        </div>
+      </div>
+        
+  
+        <h2 style="margin-bottom: 1px;">
+            Real-world counterpart/inspiration: <h4>A mix of pre-Islam Middle East (Canaan, Assyria, Mesopotamia, Egypt, etc.)</h4>
+        </h2>
+  
+        <h2 style="margin-bottom: 1px;">
+          Geographic features:
+        </h2>
+        <ul style="list-style-type: none;">
+          <li><p>Intense volcanic activity shapes the landscape, mostly centered in the large central island of Vvardenfell and a few areas surrounding the Inner Sea.</p></li>
+          <li><p>Further south is the fertile Deshaan plain, surrounding the cities of Mournhold and Narsis, and the marshes that surround the city of Tear.</p></li>
+          <li><p>The flora and fauna are unlike anything from the rest of the continent, such as the giant mushroom trees that dot the landscape, or the floating jellyfish-cattle hybrid called Netches.</p></li>
+          <li><p>Most of the province's population is gathered in central Morrowind and around the Inner Sea.</p></li>
+          <li><p>The climate ranges from mild to hot, and it never snows in Morrowind.</p></li>
+          <li><p>The border between Morrowind and Skyrim is marked by the Velothi Mountains to the west.</p></li>
+          <li><p>The border between Morrowind and Cyrodiil is marked by the Valus Mountains to the sotuhwest.</p></li>
+        </ul>
+
+        <li style="list-style-type: none; text-indent: 10px;"><h4>Morrowind is divided administratively into several districts, which are, excluding Vvardenfell, named after the Great Houses of the Dunmer: </h4>
+          <ul>
+            <li>The Vvardenfell District on the eponymous great island, dominated by the huge Red Mountain and separated from the continent by the Inner Sea.</li>
+            <li>The Dres District in the south and southeast, amid the plains near the border with Black Marsh.</li>
+            <li>The Indoril District in the central heartlands and eastern coast, amid the fertile river valleys.</li>
+            <li>The Telvanni District in the extreme northeast, made up of their remaining island settlements.</li>
+            <li>The Redoran District in northwest, found in the lands along the Velothi Mountains with Skyrim's borders and the Inner Sea.</li>
+            <li>The Sadras District of unknown coverage though presumably in the central/southwest mainland.</li>
+          </ul>
+        </li>
+        
+        <div style="display: inline-block;">
+          <ul style="list-style-type: circle;">
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Morrowind is made up of several geographic regions:
+            </b></li>
+            <li>Vvardenfell
+              <ul style="list-style-type: square;">
+                <li>A large island located inside the bay-like Inner Sea.</li>
+                <li>Surrounded by mainland Morrowind, while its northern coast meets the Sea of Ghosts.</li>
+                <li>The island is dominated by the great volcano, Red Mountain.</li>
+                <li>Characterized by arid wastes, rocky highlands and coastal wetlands filled with unusual wildlife.</li>
+                <li>Population is mostly confined to the relatively hospitable west and southwest coasts.</li>
+                <li>The eruption of Red Mountain in 4E 5 has blanketed most of the island in ash.</li>
+                <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                  <a href="../images/vvardenfell.jpg">
+                  <img src="../images/vvardenfell.jpg" style=" width: 100%;">
+                  </a>
+                  <div>
+                    <p style="margin: 0px; font-size: 14px;">Vvardenfell</p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>Stonefalls
+              <ul style="list-style-type: square;">
+                <li>A region situated in the western mainland along the southwestern shore of the Inner Sea.</li>
+                <li>Has two great volcanoes.</li>
+                <li>Contains the settlements of Davon's Watch, Ebonheart, and Kragenmoor.</li>
+                <li>The region's landscape fluctuates from volcanic crags to fertile fields and fungal forests.</li>
+                <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                  <a href="../images/stonefalls.jpg">
+                  <img src="../images/stonefalls.jpg" style=" width: 100%;">
+                  </a>
+                  <div>
+                    <p style="margin: 0px; font-size: 14px;">Stonefalls</p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>Deshaan
+              <ul style="list-style-type: square;">
+                <li>Broad southern plain which gradually slopes down into the dismal swamps of Black Marsh.</li>
+                <li>The region consists of lush green areas, fungal forests, and southeastern swamps.</li>
+                <li>Contains the city of Mournhold, capital of House Indoril, and Narsis, capital of House Sadras.</li>
+                <li>It is also home to the magical academy of Shad Astula.</li>
+                <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                  <a href="../images/deshaan.jpg">
+                  <img src="../images/deshaan.jpg" style=" width: 100%;">
+                  </a>
+                  <div>
+                    <p style="margin: 0px; font-size: 14px;">Deshaan</p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>Southern Morrowind
+              <ul style="list-style-type: square;">
+                <li>Southern region where the fertile Deshaan plain merges with the swamps of Black Marsh.</li>
+                <li>Flat, wet, and warm.</li>
+                <li>Near the coast is a warm plain with broad cultivated areas and marshes and swamps similar to those found in Black Marsh.</li>
+                <li>Contains the city of Tear.</li>
+                <li>The area around Tear is said to be "practically Black Marsh".</li>
+              </ul>
+            </li>
+            <li>Northwest Morrowind
+              <ul style="list-style-type: square;">
+                <li>The western region is the large strip of land in between the Velothi Mountains and the Inner Sea.</li>
+                <li>Made up of highlands, mountain ranges and valleys.</li>
+                <li>Contains the city of Blacklight, the stronghold of House Redoran.</li>
+                <li>House Redoran defends this region from the <a href="../lore/nords.html"> Nords </a>of Skyrim, acting as Morrowind's western frontier.</li>
+              </ul>
+            </li>
+            <li>Padomaic Crest
+              <ul style="list-style-type: square;">
+                <li>Eastern region of Morrowind, that stops before the Telvanni Peninsula of eastern Morrowind.</li>
+                <li>It is a volcanic range found along the Padomaic Ocean.</li>
+                <li>Contains the city of Necrom.</li>
+                <li>The east coast of Morrowind is a treacherous cliff coastline, especially in the region around Necrom.</li>
+                <li>The island of Gorne is found north of Necrom, in the bay between the Padomaic Crest and the Great Arm.</li>
+                <li>The region and its settlements are under the jurisdiction of Great House Indoril.</li>
+                <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                  <a href="../images/padomaiccrest.jpg">
+                  <img src="../images/padomaiccrest.jpg" style=" width: 100%;">
+                  </a>
+                  <div>
+                    <p style="margin: 0px; font-size: 14px;">Padomaic Crest</p>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li>Northeast Morrowind
+              <ul style="list-style-type: square;">
+                <li>Northeast region that includes all the land north of Necrom.</li>
+                <li>Characterized with rocky coasts and islands, as well as a number of settlements.</li>
+                <li>The northern lands are very dry compared to the temperate southern lands.</li>
+                <li>Fertile plains in the east,badlands in the west, and arid desert plateaus, mesas, and high steppes in the north.</li>
+                <li>Inhabitants of the mainland wear "Dust Adept" clothing to adapt to this dry environment.</li>
+                <li>Northeast of the region is an archipelago, which has a mix of flat and rocky rugged terrain with a few settlements.</li>
+                <li>Contains the city of Port Telvannis, capital of House Telvanni.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+  
+        <h2 style="margin-bottom: 1px;">
+          Important History:
+        </h2>
+        <ul style="list-style-type: none;">
+          <ul style="list-style-type: circle;">
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Early History</b></li>
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>First Era</b></li>
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Second Era</b></li>
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Third Era</b></li>
+            <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Fourth Era</b></li>
+          </ul>
+        </ul>
     <br/>
     <h6>  Made by NirelemCorp TM  </h6>
 </body>

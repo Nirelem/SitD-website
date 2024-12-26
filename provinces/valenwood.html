@@ -12,12 +12,11 @@
             color:black
         }
 
-        li{
+        li.navbar{
             float: left;
-            
         }
 
-        li a{
+        li.navbar a{
             display: block;
             color: white;
             text-align: center;
@@ -25,7 +24,7 @@
             text-decoration: none;
         }
 
-        li a:hover{
+        li.navbar a:hover{
             background-color: aqua;
         }
 
@@ -48,17 +47,19 @@
     <header>
         <nav>
             <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
-              <li>    <a href="../index.html"> Home              </a>  </li>
-              <li>    <a href="../map.html"> Map                 </a>  </li>
-              <li>    <a href="../logs.html"> Session Logs       </a>  </li> 
-              <li>    <a href="../lore.html"> Lore               </a>  </li>
-              <li>    <a href="../characters.html"> Characters   </a>  </li>
-              <li>    <a href="../about.html"> About             </a>  </li>
+              <li class="navbar">    <a href="../index.html"> Home              </a>  </li>
+              <li class="navbar">    <a href="../map.html"> Map                 </a>  </li>
+              <li class="navbar">    <a href="../logs.html"> Session Logs       </a>  </li> 
+              <li class="navbar">    <a href="../lore.html"> Lore               </a>  </li>
+              <li class="navbar">    <a href="../characters.html"> Characters   </a>  </li>
+              <li class="navbar">    <a href="../about.html"> About             </a>  </li>
             </ul>
         </nav>
 
         <h1>  Valenwood  </h1>
     </header>
+
+    <a href="../map.html"> <button style="margin: 10px;">Go Back</button></a>
 
     <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" viewBox="0 0 2048 1536" sodipodi:docname="valenwood1.svg" inkscape:version="1.4 (86a8ad7, 2024-10-11)">
         <defs id="defs1">
@@ -123,9 +124,42 @@
         </g>
       </svg>
 
-    <p> 
-        Important info about the province of Valenwood
-    </p>
+      <div style="float: right; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+        <div>
+          <p style="margin: 0px; font-size: 20px; text-align: center; margin-bottom: 3px;"><a href="../lore/bosmer.html">Bosmer</a></p>
+        </div>
+        <a href="../images/bosmer.png">
+        <img src="../images/bosmer.png" style=" width: 100%;  border:1px solid grey;">
+        </a>
+        <div>
+          <p style="margin: 0px; font-size: 14px;">Illustration of a Bosmer male</p>
+        </div>
+      </div>
+      <div>
+        <h2 style="margin-bottom: 1px;">
+            Summary:
+        </h2>
+            <ul style="list-style-type: none;">
+              <li style="float: none;"><p>Homeland of the Wood Elves/Bosmer.</p></li>
+              <li style="float: none;"><p>Makes up the southwest of Tamriel.</p></li>
+              <li style="float: none;"><p>A densely forested, sub-tropical region, it is dubbed Tamriel's garden.</p></li>
+              <li style="float: none;"><p>Valenwood is part of the Aldmeri Dominion.</p></li>
+              <li style="float: none;"><p>Borders Cyrodiil to the north, and Elsweyr to the east.</p></li>
+            </ul>
+        </div>
+  
+        
+          
+    
+          <h2 style="margin-bottom: 1px;">
+              Real-world counterpart/inspiration: <h4>Originally just the stereotypical Tolkien/D&D Wood Elves, the closest real-world inspiration would be Native American sprinkled with a bit of Celtic (Iroquois).</h4>
+          </h2>
+          <br><br><br>
+          <h2 style="margin-bottom: 1px;">
+            Geographic features:
+          </h2>
+
+          <img src="../images/censor2.png" style="width: 100%;">
     <br/>
     <h6>  Made by NirelemCorp TM  </h6>
 </body>

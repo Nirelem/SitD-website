@@ -12,12 +12,11 @@
             color:black
         }
 
-        li{
+        li.navbar{
             float: left;
-            
         }
 
-        li a{
+        li.navbar a{
             display: block;
             color: white;
             text-align: center;
@@ -25,7 +24,7 @@
             text-decoration: none;
         }
 
-        li a:hover{
+        li.navbar a:hover{
             background-color: aqua;
         }
 
@@ -48,17 +47,19 @@
     <header>
         <nav>
             <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
-              <li>    <a href="../index.html"> Home              </a>  </li>
-              <li>    <a href="../map.html"> Map                 </a>  </li>
-              <li>    <a href="../logs.html"> Session Logs       </a>  </li> 
-              <li>    <a href="../lore.html"> Lore               </a>  </li>
-              <li>    <a href="../characters.html"> Characters   </a>  </li>
-              <li>    <a href="../about.html"> About             </a>  </li>
+              <li class="navbar">    <a href="../index.html"> Home              </a>  </li>
+              <li class="navbar">    <a href="../map.html"> Map                 </a>  </li>
+              <li class="navbar">    <a href="../logs.html"> Session Logs       </a>  </li> 
+              <li class="navbar">    <a href="../lore.html"> Lore               </a>  </li>
+              <li class="navbar">    <a href="../characters.html"> Characters   </a>  </li>
+              <li class="navbar">    <a href="../about.html"> About             </a>  </li>
             </ul>
         </nav>
 
         <h1>  Black Marsh  </h1>
     </header>
+
+    <a href="../map.html"> <button style="margin: 10px;">Go Back</button></a>
 
     <svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" id="svg1" viewBox="0 0 2048 1536" sodipodi:docname="blackmarsh1.svg" inkscape:version="1.4 (86a8ad7, 2024-10-11)">
         <defs id="defs1"/>
@@ -125,9 +126,136 @@
         </g>
       </svg>
 
-    <p> 
-        Important info about the province of Black Marsh
-    </p>
+      <div>
+        <h2 style="margin-bottom: 1px;">
+            Summary:
+        </h2>
+            <ul style="list-style-type: none;">
+              <li style="float: none;"><p>Homeland of the Argonians.</p></li>
+              <li style="float: none;"><p>Makes up the southeastern part of Tamriel. </p></li>
+              <li style="float: none;"><p>It is the Amazon Rainforest of Tamriel, very dangerous to inexperienced foreigners.</p></li>
+              <li style="float: none;"><p>Borders Morrowind to the north, and Cyrodiil to the west.</p></li>
+            </ul>
+        </div>
+  
+        <div style="float: right; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+          <div>
+            <p style="margin: 0px; font-size: 20px; text-align: center; margin-bottom: 3px;"><a href="../lore/argonians.html">Argonians</a></p>
+          </div>
+          <a href="../images/argonian.png">
+          <img src="../images/argonian.png" style=" width: 100%;  border:1px solid grey;">
+          </a>
+          <div>
+            <p style="margin: 0px; font-size: 14px;">Illustration of an Argonian male</p>
+          </div>
+        </div>
+          
+    
+          <h2 style="margin-bottom: 1px;">
+              Real-world counterpart/inspiration: <h4>Mesoamerica (Aztec, Mayan)</h4>
+          </h2>
+    
+          <h2 style="margin-bottom: 1px;">
+            Geographic features:
+          </h2>
+          <ul style="list-style-type: none;">
+            <li><p>Consists of very dense swampland region and lush humid jungles that are teeming with posionous plants and violent predators.</p></li>
+            <li><p>The land of Black Marsh is very hostile to outsiders that are not adapted to the almost-sentient swamps, especially further inland.</p></li>
+            <li><p>The region's tropical climate lends its plants the capacity to overturn all attempts to cultivate them.</p></li>
+            <li><p>There are few roads, and the principal method of travel is by boat.</p></li>
+            <li><p>Foreign ventures beyond the slave-trade have met with abject failure; only the native peoples and the sapient Hist trees can thrive here.</p></li>
+            <li><p>Most of the Argonian population reside in the inland waterways and swamps of the southern interior.</p></li>
+          </ul>
+          
+          <div style="display: inline-block;">
+            <ul style="list-style-type: circle;">
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>The regions of Black Marsh are varied and difficult to map; categorizing which region a city belongs to is unclear, but here is what is currently known:
+              </b></li>
+              <li>Arnesia
+                <ul style="list-style-type: square;">
+                  <li>A region somewhere in the eastern parts of Black Marsh, roughly in between the cities of Thorn and Archon.</li>
+                  <li>There is a round island off the east coast of the area, known to consist of dark green/gray terrain.</li>
+                </ul>
+              </li>
+              <li>Gloomire
+                <ul style="list-style-type: square;">
+                  <li>Western swampy region in Black Marsh.</li>
+                  <li>Contains the city of Gideon.</li>
+                  <li>Being next to the Cyrodiil border, this frontier region is the gateway before the more treacherous parts of Black Marsh.</li>
+                  <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                    <a href="../images/gloomire.jpg">
+                    <img src="../images/gloomire.jpg" style=" width: 100%;">
+                    </a>
+                    <div>
+                      <p style="margin: 0px; font-size: 14px;">Gloomire</p>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li>Middle Argonia
+                <ul style="list-style-type: square;">
+                  <li>This region is the impenetrable center, the dark heart of Black Marsh.</li>
+                  <li>The marsh becomes extremely dense here, and the mud is said to take on a pitch-black hue.</li>
+                  <li>Only Argonians can survive here.</li>
+                  <li>Has the most amount of Hist trees and, therefore, Argonian tribes.</li>
+                  <li>Contains the city of Helstrom.</li>
+                  <li>All river systems in Black Marsh flow into Middle Argonia.</li>
+                  
+                </ul>
+              </li>
+              <li>Murkmire
+                <ul style="list-style-type: square;">
+                  <li>Coastal region in southern Black Marsh.</li>
+                  <li>Contains the port city of Lilmoth.</li>
+                  <li>Murkmire is inhabited by both Argonian and Naga tribes.</li>
+                  <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                    <a href="../images/murkmire.jpg">
+                    <img src="../images/murkmire.jpg" style=" width: 100%;">
+                    </a>
+                    <div>
+                      <p style="margin: 0px; font-size: 14px;">Murkmire</p>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li>Shadowfen
+                <ul style="list-style-type: square;">
+                  <li>Northwest region of Black Marsh.</li>
+                  <li>Borders Morrowind to the north and Cyrodiil to the west.</li>
+                  <li>Contains the city of Stormhold.</li>
+                  <li>Being next to Morrowind, it is the most prone to raids by <a href="../lore/dunmer.html">Dunmer</a> slavers.</li>
+                  <div style="background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:10px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+                    <a href="../images/shadowfen.jpg">
+                    <img src="../images/shadowfen.jpg" style=" width: 100%;">
+                    </a>
+                    <div>
+                      <p style="margin: 0px; font-size: 14px;">Shadowfen</p>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li>Thornmarsh
+                <ul style="list-style-type: square;">
+                  <li>Coastal region in northeastern Black Marsh.</li>
+                  <li>Contains the city of Thorn.</li>
+                  <li>Has more temperate grasslands compared to the swampier areas further south.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+    
+          <h2 style="margin-bottom: 1px;">
+            Important History:
+          </h2>
+          <ul style="list-style-type: none;">
+            <ul style="list-style-type: circle;">
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Early History</b></li>
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>First Era</b></li>
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Second Era</b></li>
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Third Era</b></li>
+              <li style="list-style: none; text-indent: -20px; margin-bottom: 10px;"><b>Fourth Era</b></li>
+            </ul>
+          </ul>
     <br/>
     <h6>  Made by NirelemCorp TM  </h6>
 </body>
