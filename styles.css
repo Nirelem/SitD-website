@@ -5,6 +5,12 @@ body {
     text-align: center;
     margin: 0;
 }
+.body-background-image {
+    background-position: center; 
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
 a:link {
     color: #888888;
   }
@@ -19,6 +25,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 20px;
+    align-items: center;
 }
 nav li {
     display: inline;
@@ -39,6 +46,43 @@ nav a:link {
 nav a:visited {
     color: white;
 }
+
+/* RESPONSIVE RULES */
+@media screen and (max-width: 684px) {
+    nav a {
+        font-size: 8px;
+        /* padding: 6px 8px; */
+    }
+    nav ul{
+        gap: 0;
+    }
+    main h1 {
+        font-size: 70px;
+    }
+    main h4 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    nav a {
+        font-size: 8px;
+        padding: 2px 4px;
+    }
+    nav ul{
+        gap: 0;
+    }
+    main h1 {
+        font-size: 50px;
+    }
+    main h4 {
+        font-size: 10px;
+    }
+    main{
+        background-size: 100%;
+    }
+}
+
 .logo {
     display: block;
     margin: 20px auto;
@@ -93,6 +137,11 @@ footer {
     padding: 10px;
     background-color: #111;
     color: #777;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px; */
 }
 svg{
     max-width: 100%;
@@ -164,4 +213,38 @@ h1 {
     overflow: hidden;
     transition: max-height 0.2s ease-out;
     background-color: #484747;
+}
+.city-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    border: 2px solid #555;
+    float: left;
+}
+.city-figure {
+    /* display: block;
+    margin: 0 auto;
+    text-align: center; */
+    float: left;
+}
+.city-container{
+    display:flex;
+    justify-content: flex-end;
+}
+.box{
+    width: 50%; /* Adjust width as needed */
+    /* background-color: lightblue; */
+    /* padding: 20px; */
+    text-align: center;
+}
+.city-button{
+    text-align: left;
+    margin-left: 20px;
+}
+.city-figure-caption{
+    text-align: justify;
+}
+.city-figure-text{
+    text-align: justify;
+    margin-right: 50px;
 }
