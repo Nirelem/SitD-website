@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gideon</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,54 +22,75 @@
             </ul>
         </nav>
         
-
         <h1>  Gideon  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../blackmarsh.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/gideon.jpg">
-        <img src="../../../images/gideon.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/gideon.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Gideon during 2nd Era in <i>Elder Scrolls Online</i></p>
-        </div>
-    </div>
-
-    <p style="text-align: justify;">Gideon is one of the eight major cities in the province 
+        <figcaption class="city-figure-caption">Gideon during 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Gideon is one of the eight major cities in the province 
         of Black Marsh, situated in the flooded hillscape of 
         Blackwood. 
-        <br><br>
-        <b>Architecture & Layout: </b>The city is surrounded by steep and lightly forested 
-        hills to the west and the humid marshland to the 
-        northeast.
-        <br><br>
-        The city is built majorly in the <a href="../../../lore/imperials.html"> Imperial </a>architectural style.
-        Most of the city's buildings are located on the main road because 
-        it's the only dry ground left through Gideon, so important 
-        structures such as the Temple of Dibella (the Goddess of Beauty)
-        and the Governor's Mansion can be found here. While the main 
-        road is large and spacious, the streets of Gideon are 
-        described as cramped and labyrinthine. 
-        <br><br>
-        <b>Politics: </b>Gideon is a sleepy frontier town that serves 
-        as a gateway to the greater and treacherous expanse of 
-        the province. It is a mixture of two cultures, 
-        from the modern-day Imperials to the 
-        Argonians of Blackwood. Gideon is 
-        often visited and settled by those that 
-        seek out Black Marsh's wonders.
-        <br><br>
-        <b>Quick History: </b>Early in the 4th Era, Gideon was overrun by the undead forces of 
-        Umbriel, a floating island-city that required the souls of the
-        dead to stay afloat. Fortunately, Gideon has mostly recovered 
-        as of the current day.
     </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The city is surrounded by steep and lightly forested 
+                    hills to the west and the humid marshland to the 
+                    northeast.</p></li>
+                <li><p>The city is built majorly in the <a href="../../../lore/imperials.html">Imperial</a> architectural style.</p></li>   
+                <li><p>Most of the city's buildings are located on the main road because 
+                    it's the only dry ground left through Gideon.</p></li>
+                <li><p>structures such as the Temple of <a href="../../../lore/religion/dibella.html">Dibella</a> (the Goddess of Beauty)
+                    and the Governor's Mansion can be found on the main road.</p></li>
+                <li><p>While the main 
+                    road is large and spacious, the streets of Gideon are 
+                    described as cramped and labyrinthine. </p></li>          
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Gideon is a sleepy frontier town that serves 
+                    as a gateway to the greater and treacherous expanse of 
+                    the province.</p></li>
+                <li><p>The city is a mixture of two cultures, 
+                    from the modern-day Imperials to the 
+                    Argonians of Blackwood.</p></li>   
+                <li><p> Gideon is 
+                    often visited and settled by those that 
+                    seek out Black Marsh's wonders.</p></li>         
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Early in the 4th Era, Gideon was overrun by the undead forces of 
+                    <b>Umbriel</b>, a floating island-city that required the souls of the
+                    dead to stay afloat. Fortunately, Gideon has mostly recovered 
+                    as of the current day.</p></li>      
+            </ul>
+        </div>
+    </div>
+ 
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

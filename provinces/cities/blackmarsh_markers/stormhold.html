@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stormhold</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,56 +22,88 @@
             </ul>
         </nav>
         
-
         <h1>  Stormhold  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../blackmarsh.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/stormhold.jpg">
-        <img src="../../../images/stormhold.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/stormhold.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Stormhold during 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Stormhold during 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">Stormhold is one of the eight major cities in the 
+        province of Black Marsh, serving as the largest 
+        settlement of the region of Shadowfen.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Stormhold is located near the banks of a mighty river 
+                    that forms the provincial border between the primordial 
+                    morass of Black Marsh and the scenic grazelands of Morrowind.</p></li>
+                <li><p>Even though the river is practically outside of the 
+                    city walls, the land around Stormhold is sunken marshes 
+                    and crocodile-infested ravines with shallow waters.</p></li>   
+                <li><p>Much of the city is built on top of old ruins and 
+                    wide-open mounds surrounded by ravines.</p></li>          
+            </ul>
+        </div>
+        <!--A City Built Over Ruins-->
+        <button class="collapsible"><h2>A City Built Over Ruins</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Stormhold is an Argonian settlement built 
+                    on top of a former <a href="../../../lore/dunmer.html"> Dark 
+                    Elf</a> city, which was was built on top of <a href="../../../lore/ayleids.html">Ayleid</a>
+                    ruins. 
+                </p></li>
+                <li><p>The town uses both the stone, ornate architecture of 
+                    the Dark Elves and the large mud huts of the Argonians.
+                </p></li>   
+                <li><p>When the Dark Elves were in control of Stormhold, they 
+                    fully refurbished the site with proper stone roads, 
+                    light posts, and long wooden bridges.</p></li>
+                <li><p>The local <a href="../../../lore/religion/hist.html">Hist 
+                    Tree</a> of Stormhold is located in the town square, in 
+                    the middle of a pond, surrounded by ancient pillars, 
+                    broken arches, and a small stone wall that circles around it.
+                </p></li>               
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content">
+            <ul class="collapsible-ul">
+                <li><p>Stormhold 
+                    has a dark history that involves the nearby <a href="../../../lore/dunmer.html"> Dark 
+                    Elves</a>, as it was once the foothold of their slavery 
+                    industry in the province. </p></li>
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content">
+            <ul class="collapsible-ul">
+                <li><p>Early in the 4th Era, Stormhold was overrun by the undead forces of 
+                    <b>Umbriel</b>, a floating island-city that required the souls of the
+                    dead to stay afloat. Fortunately, Stormhold has mostly recovered 
+                    as of the current day.</p></li>
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Stormhold is one of the eight major cities in the 
-        province of Black Marsh, serving as the largest 
-        settlement of the region of Shadowfen. Stormhold 
-        has a dark history that involves the nearby <a href="../../../lore/dunmer.html"> Dark 
-        Elves</a>, as it was once the foothold of their slavery 
-        industry in the province. 
-        <br><br>
-        <b>Architecture & Layout: </b>Stormhold is located near the banks of a mighty river 
-        that forms the provincial border between the primordial 
-        morass of Black Marsh and the scenic grazelands of Morrowind. 
-        But even though the river is practically outside of the 
-        city walls, the land around Stormhold is sunken marshes 
-        and crocodile-infested ravines with shallow waters.
-        
-        The town uses both the stone, ornate architecture of 
-        the Dark Elves and the large mud huts of the Argonians.
-        When the Dark Elves were in control of Stormhold, they 
-        fully refurbished the site with proper stone roads, 
-        light posts, and long wooden bridges. The local Hist 
-        Tree of Stormhold is located in the town square, in 
-        the middle of a pond, surrounded by ancient pillars, 
-        broken arches, and a small stone wall that circles around it.
-        Much of the city is built on top of old ruins and 
-        wide-open mounds surrounded by ravines.
-        <br><br>
-        <b>Quick History: </b>Early in the 4th Era, Stormhold was overrun by the undead forces of 
-        Umbriel, a floating island-city that required the souls of the
-        dead to stay afloat. Fortunately, Stormhold has mostly recovered 
-        as of the current day.
-        
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>
