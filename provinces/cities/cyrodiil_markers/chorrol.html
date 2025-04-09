@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chorrol</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,36 +22,52 @@
             </ul>
         </nav>
         
-
         <h1>  Chorrol  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../cyrodiil.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/chorrol.jpg">
-        <img src="../../../images/chorrol.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/chorrol.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Chorrol during 3rd Era in <i>Elder Scrolls IV: Oblivion</i></p>
+        <figcaption class="city-figure-caption">Chorrol during 3rd Era in <i>Elder Scrolls IV: Oblivion</i></figcaption>
+    </figure>
+    <p class="city-figure-text">Chorrol is a <b>Colovian</b> town in northwestern Cyrodiil, 
+        between the Great Forest of west Cyrodiil and the 
+        Colovian Highlands of the Hammerfell border.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The city is protected 
+                    by thick walls and guard towers.</p></li>
+                <li><p>The city is divided into five main districts: 
+                    Fountain Gate, Castle Chorrol, Chapel Street, West 
+                    District, and the Great Oak Place.</p></li>
+                <li><p>Chorrol also 
+                    possesses its own sewer system.</p></li>
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The city is the seat of County Chorrol.</p></li>   
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Chorrol is a Colovian town in northwestern Cyrodiil, 
-        between the Great Forest of west Cyrodiil and the 
-        Colovian Highlands of the Hammerfell border.
-        <br><br>
-        <b>Architecture & Layout: </b>The city is divided into five main districts: 
-        Fountain Gate, Castle Chorrol, Chapel Street, West 
-        District, and the Great Oak Place. It is protected 
-        by thick walls and guard towers. Chorrol also 
-        possesses its own sewer system.
-        
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

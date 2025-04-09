@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leyawin</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,44 +22,62 @@
             </ul>
         </nav>
         
-
         <h1>  Leyawin  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../cyrodiil.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/leyawiin.jpg">
-        <img src="../../../images/leyawiin.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/leyawiin.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Leyawiin during 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Leyawiin during 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">Leyawiin is a <b>Nibenese</b> city in the extreme southeast 
+        of the province, by the mouth of the Niben River.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Known as the city that spans the waters, the city 
+                    straddles a swampy estuary of the Niben on the small 
+                    strip of land between Elsweyr and Black Marsh.</p></li>
+                <li><p>Leyawiin is roughly divided into four districts: 
+                    Chapel District, Guild Plaza, Main Street and 
+                    Castle Leyawiin.</p></li>
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The city is the seat of County Leyawin.</p></li>   
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>During the <a href="../../../lore/greatwar.html">Great War</a> in 4E 171,
+                    <a href="../../../lore/altmer.html#thalmor">Dominion</a> forces marched out of hidden camps in Northern Elsweyr.</p></li>  
+                <li><p>Leyawiin was one of the first cities to fall 
+                    to the Aldmeri Dominion's invasion.</p></li> 
+                <li><p>When the Great War ended, the Dominion
+                    relinquished all conquered territory.</p></li>  
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Leyawiin is a Nibenese city in the extreme southeast 
-        of the province, by the mouth of the Niben River.
-        <br><br>
-        <b>Architecture & Layout: </b>Known as the city that spans the waters, the city 
-        straddles a swampy estuary of the Niben on the small 
-        strip of land between Elsweyr and Black Marsh.
-        Leyawiin is roughly divided into four districts: 
-        Chapel District, Guild Plaza, Main Street and 
-        Castle Leyawiin.
-        <br><br>
-        <b>Quick History: </b>During the <a href="../../../lore/greatwar.html">Great War</a> in 4E 171,
-        Dominion forces marched out of hidden camps in Northern Elsweyr.
-        The southern coastline of Cyrodiil was then overwhelmed by the 
-        invasion forces, and Leyawiin was one of the first cities to fall 
-        to the Aldmeri Dominion's invasion.
-        When the Great War ended
-        with the signing of the White-Gold Concordat, the Dominion
-        relinquished all conquered territory.
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>
