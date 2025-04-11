@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daggerfall</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,54 +22,80 @@
             </ul>
         </nav>
         
-
         <h1>  Daggerfall  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../highrock.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-    </br>
+    <!--figure-->
+    <figure class="city-figure">
+        <a href="../../../images/daggerfall.jpg">
+            <img src="../../../images/daggerfall.jpg" class="city-image">
+        </a>
+        <figcaption class="city-figure-caption">Daggerfall during 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Daggerfall is the capital of the region of Glenumbra. 
+            It serves as the seat of power for the Kingdom of Daggerfall, one of the five major kingdoms in High Rock.
+            
+    </p>
 
-    <div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-        <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
-            <a href="../../../images/daggerfall.jpg">
-            <img src="../../../images/daggerfall.jpg" style=" width: 100%;  border:1px solid grey;">
-            </a>
-            <div>
-            <p style="margin: 0 0 2px 0; font-size: 14px;">Daggerfall during 2nd Era in <i>Elder Scrolls Online</i></p>
-            </div>
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Daggerfall is a large walled city built at the top of a tall, steep hill that towers over the coast but gradually 
+                    inclines down into the forests to the northeast.</p></li>
+                <li><p>Specifically, it is on the north side of a bay at the southernmost 
+                    point of Glenumbra, around where the Iliac Bay meets the Eltheric Ocean.</p></li>
+                <li><p>The city is typical of Breton design, featuring stone buildings with steep, sloped roofs, 
+                    reflecting their medieval European inspiration.</p></li>
+                <li><p>The city is divided into several districts but the most important are Castle Town,
+                    the Harbor District, and the Trade District.</p></li>
+            </ul>
         </div>
-
-        <p style="text-align: justify;">Daggerfall is the capital of the region of Glenumbra. 
-            It serves as the seat of power for the Kingdom of Daggerfall, one of the five major kingdoms in High Rock
-            By virtue of its age, prosperity, and prominence, it was considered 
-            the de-facto capital of High Rock by the Third Empire.
-            </br>
-            </br>
-            <b>Architecture & Layout: </b> Daggerfall is a large walled city built at the top of a tall, steep hill that towers over the coast but gradually 
-            inclines down into the forests to the northeast, specifically on the north side of a bay at the southernmost 
-            point of Glenumbra, around where the Iliac Bay meets the Eltheric Ocean.
-            The city is typical of Breton design, featuring stone buildings with steep, sloped roofs, 
-            reflecting their medieval European inspiration.
-            The city is divided into several districts but the most important are Castle Town,
-             the Harbor District, and the Trade District. 
-            </br>
-            </br>
-            <b>Politics:</b> The city is the political heart of one of the most powerful factions in High Rock. The rulers of Daggerfall 
-            often wield significant influence over the politics of the Iliac Bay region. Historically, the throne has been held by the 
-            Imperial-supporting royal family. Over the course of its long history, the kingdom of Daggerfall has often been at war with
-            the kingdom of Sentinel in Hammerfell, across the Iliac Bay. Daggerfall thrives as a coastal city due to trade.
-            </br>
-            </br>
-            <b>Quick History: </b>The city of Daggerfall was a major location in <i>Elder Scrolls II: Daggerfall</i>. In the game, the ghost of
-            King Lysandus haunted the city's streets at night with a horde of undead spirits, screaming vengeance as they terrorized the populace.
-            Lysandus' spirit would only be soothed when the player character avenged the king by killing his murderer. This laid Lysandus' spirit
-            to rest, and the curse over Daggerfall was lifted. </br>
-            During the <a href="../../../lore/warpinthewest.html">Warp in the West,</a> which took place
-            during the conclusion of <i>Elder Scrolls II: Daggerfall,</i> The Kingdom of Daggerfall was a major faction involved in the event, and it was one of 
-            the five major Breton kingdoms that emerged after the Warp.
-        </p>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>By virtue of its age, prosperity, and prominence, it was considered 
+                    the de-facto capital of High Rock by the Third Empire.</p></li>
+                <li><p>The city is the political heart of one of the most powerful 
+                    factions in High Rock; the rulers of Daggerfall 
+                    often wield significant influence over the politics of the Iliac Bay region.</p></li>
+                <li><p>Historically, the throne has been held by the 
+                    Imperial-supporting royal family.</p></li>    
+                <li><p>Over the course of its long history, the kingdom of Daggerfall has often been at war with
+                    the kingdom of <a href="../hammerfell_markers/sentinel.html">Sentinel</a> in Hammerfell, across the Iliac Bay.</p></li>
+                <li><p>Daggerfall thrives as a coastal city due to trade.</p></li>
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The city of Daggerfall was a major location in 
+                    <i>Elder Scrolls II: Daggerfall</i>.</p></li>   
+                <li><p>In the game, the ghost of King Lysandus haunted the 
+                    city's streets at night with a horde of undead spirits, 
+                    screaming vengeance as they terrorized the populace.</p></li>  
+                <li><p>Lysandus' spirit would only be soothed when the player character avenged the king by killing his murderer, 
+                    thus laying Lysandus' spirit
+                    to rest and lifting the curse over Daggerfall.</p></li>
+                <li><p>During the <a href="../../../lore/warpinthewest.html">Warp in the West,</a> which took place
+                    during the conclusion of <i>Elder Scrolls II: Daggerfall,</i> The Kingdom of Daggerfall was a major faction involved in the event, and it was one of 
+                    the five major Breton kingdoms that emerged after the Warp.</p></li>
+            </ul>
+        </div>
     </div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

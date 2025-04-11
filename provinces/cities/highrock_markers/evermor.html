@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evermor</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -43,48 +22,70 @@
             </ul>
         </nav>
         
-
         <h1>  Evermor  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../highrock.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/evermore.jpg">
-        <img src="../../../images/evermore.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/evermore.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Bjoulsae River, w/ Evermor in the distance, 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Bjoulsae River, w/ Evermor in the distance, 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Evermor, sometimes spelled Evermore, is a city on the banks of the Bjoulsae River in eastern High Rock, 
+        located near the border with Hammerfell.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Its impressive palace was assembled from slabs of granite quarried 
+                    from nearby Markarth.</p></li>
+                <li><p>The city is strategically located along the only land route that connects High Rock to the rest of the 
+                    continent of Tamriel.</p></li>
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Historically, lands around Evermor were subject to 
+                    frequent attacks from the <a href="../../../lore/reachmen.html">Reachmen</a> 
+                    of the mountains, who asserted their birthright to the city and 
+                    aimed to reclaim their ancestral homeland.</p></li>
+                <li><p>Because Southern Bangkorai is considered a region of 
+                    Hammerfell, Evermore's rulership is often contested by the 
+                    <a href="../../../lore/redguards.html">Redguards</a> 
+                    of <a href="../hammerfell_markers/sentinel.html">Sentinel</a>.</p></li>
+                <li><p>Evermore's position 
+                    along trade routes spanning to the rest of Tamriel allowed it to become an important trading hub.</p></li>    
+                <li><p>Locally, it linked eastern High Rock, the southern and central regions of Hammerfell, 
+                    <a href="../hammerfell_markers/orsinium.html">Orsinium</a>, and 
+                    western Skyrim, while more distant trade routes to the southeast connected it with Cyrodiil.</p></li>
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>After the <a href="../../../lore/warpinthewest.html">Warp in the West,</a> which took place
+                    during the conclusion of <i>Elder Scrolls II: Daggerfall,</i> The Kingdom of Evermor was 
+                    one of the five major Breton kingdoms that emerged after the Warp.</p></li>
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Evermore, sometimes spelled Evermor, is a city on the banks of the Bjoulsae River in eastern High Rock, 
-        located near the border with Hammerfell.
-    </br>
-</br>
-        <b>Architecture & Layout: </b>Its impressive palace was assembled from slabs of granite quarried from nearby Markarth. 
-        The city is strategically located along the only land route that connects High Rock to the rest of the 
-        continent of Tamriel.
-    </br>
-</br>
-        <b>Politics: </b>Historically, the Bretons of Evermore ruled over the region of Bangkorai. These lands were subject to 
-        frequent attacks from the <a href="../../../lore/reachmen.html"> Reachmen</a> of the mountains, who asserted their birthright to the city and 
-        aimed to reclaim their ancestral homeland. Because Southern Bangkorai is considered a region of 
-        Hammerfell, Evermore's rulership is often contested by the Redguards of <a href="../hammerfell_markers/sentinel.html"> Sentinel</a>. Evermore's position 
-        along trade routes spanning to the rest of Tamriel allowed it to become an important trading hub. 
-        Locally, it linked eastern High Rock, the southern and central regions of Hammerfell, <a href="../hammerfell_markers/orsinium.html"> Orsinium</a>, and 
-        western Skyrim, while more distant trade routes to the southeast connected it with Cyrodiil.
-        </br>
-        </br>
-        
-        <b>Quick History: </b>
-        Before the<a href="../../../lore/warpinthewest.html"> Warp in the West,</a> it was one of eight kingdoms in High Rock, though the aftermath of the Warp 
-        would see Evermore as one of only five remaining Breton Kingdoms in High Rock.
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

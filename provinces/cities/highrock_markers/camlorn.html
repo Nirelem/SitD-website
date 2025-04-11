@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camlorn</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -42,45 +21,90 @@
                 <li>    <a href="../../../about.html"> About             </a>  </li>
             </ul>
         </nav>
-        
 
         <h1>  Camlorn  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../highrock.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/camlorn.jpg">
-        <img src="../../../images/camlorn.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/camlorn.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Camlorn under siege, 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Camlorn under siege, 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Camlorn is one of the five major Breton kingdoms in the province of High Rock, 
+        situated on the coastal highlands of Glenumbra.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Camlorn is a large, walled-off city with a series of watchtowers, 
+                    placed on a tall hill that is scalable only from the south.</p></li>
+                <li><p>The city's outskirts 
+                    are largely rocky and have few open plots of land, as it all descends north into the coast.</p></li>
+                <li><p>There is at least one farm outside of the city, next to the sewer entrance.</p></li>
+                <li><p>Camlorn's city gate has a courtyard that connects to three different districts of Camlorn:  
+                    the Temple District, the Castle District, and a third smaller district with several homes.</p></li>
+                <li><p>The city has a northern quarter that is very affluent and contains the 
+                    local Prostitutes Guildhouse, a very grand palace.</p></li>
+                <li><p>The north end of the city also has the Camlorn Royal Palace, the seat of power in both the capital city and the kingdom.</p></li>
+                <li><p>There is 
+                    a path behind the castle that goes outside the walls and onto a cliffside that overlooks the 
+                    Eltheric Ocean and a wide, rocky promontory called Cavilstyr Rock.</p></li>
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Camlorn and the surrounding region 
+                    is a melting pot of several different Breton cultures and its people fancy themselves 
+                    as more refined and metropolitan compared to their neighbors in Daggerfall. </p></li>
+                <li><p>The kingdom's nobility consider themselves an aristocracy of poets and artisans.</p></li>
+                <li><p>The city has also greatly benefitted from trade coming from either the Eltheric Ocean or the Iliac Bay.</p></li>
+            </ul>
+        </div>
+        <!--Festivals-->
+        <button class="collapsible"><h2>Festivals</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Camlorn holds an annual celebration that honors the time their nation was first 
+                    recognized as a kingdom; every street from boulevards to alleyways is 
+                    adorned with gold and purple banners.</p></li>
+                <li><p>The streets and plazas are filled to the brim with musicians 
+                    and entertainers such as <a href="../../../lore/redguards.html">Redguard</a> snake charmers, 
+                    <a href="../../../lore/khajiit.html">Khajiiti</a> acrobats, and mages performing spectacular illusions.</p></li>
+                <li><p>The city has also greatly benefitted from trade coming from either the Eltheric Ocean or the Iliac Bay.</p></li>
+                <li><p>It commonly starts with the March of Beauty, where thousands of young, 
+                    comely dressed women dance through the city's main street.</p></li>
+                <li><p>The celebration ends with the Festival of Flowers, where a large circle surrounded by lit candles 
+                    is formed on Cavilstyr Rock and dancers flock around with vines and flowers.</p></li>
+            </ul>
+        </div>
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>During the <a href="../../../lore/warpinthewest.html">Warp in the West,</a> which took place
+                    during the conclusion of <i>Elder Scrolls II: Daggerfall,</i> The Kingdom of Camlorn was 
+                    a major faction involved in the event, and it was one of 
+                    the five major Breton kingdoms that emerged after the Warp.</p></li>
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Camlorn is one of the five major Breton kingdoms in the province of High Rock, 
-        situated on the coastal highlands of Glenumbra. Camlorn and the surrounding region 
-        is a melting pot of several different Breton cultures and its people fancy themselves 
-        as more refined and metropolitan compared to their neighbors in Daggerfall. 
-        </br>
-        </br>
-        <b>Architecture & Layout: </b>The city is a large, walled-off city. The city itself 
-        is placed on a tall hill that is scalable only from the south. The city's outskirts 
-        are largely rocky and have few open plots of land, as it all descends north into the coast.
-        There is at least one farm outside of the city, next to the sewer entrance.
-        </br>
-        </br>
-        Camlorn's city gate has a courtyard that connects to three different districts of Camlorn, 
-        Temple District, the Castle District, and a third smaller district with several homes. 
-        The city has a northern quarter that is very affluent and contains the 
-        local Prostitutes Guildhouse, a grand palace. There is 
-        a path behind the castle that goes outside the walls and onto a cliffside that overlooks the 
-        Eltheric Ocean and a wide, rocky promontory called Cavilstyr Rock.
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sharnhelm</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -42,52 +21,70 @@
                 <li>    <a href="../../../about.html"> About             </a>  </li>
             </ul>
         </nav>
-        
 
         <h1>  Sharnhelm  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../highrock.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/shornhelm.jpg">
-        <img src="../../../images/shornhelm.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/shornhelm.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Shornhelm during 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Shornhelm during 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Shornhelm (sometimes spelled Sharnhelm) is a Breton kingdom in the 
+        province of High Rock, located in the center of Rivenspire.
+    </p>
+
+    <div class="container">
+        <!--Architecture & Layout-->
+        <button class="collapsible"><h2>Architecture & Layout</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Shornhelm is located in the tumultuous landscape of the Kurallian Mountains in north High Rock, 
+                    which is known for its rough, tricky terrain and oppressive environment, one that many people 
+                    find hard to survive in.</p></li>
+                <li><p>The city is built on a hill that overlooks the entire central region 
+                    and it even boasts a strong defensive parameter of high walls and watchtowers.</p></li>
+                <li><p>Shornhelm is 
+                    split between two districts, the lower city where the common folk dwell and trade with one 
+                    another, as well as the upper city, where the nobility live.</p></li>
+                <li><p>The upper district has a manor for each of the noble houses, 
+                    as well as the local barracks.</p></li>
+                <li><p>The city's substructure is a series of interconnected cisterns that connect to each of the 
+                    city's water wells, like a honeycomb of pocketed caches.</p></li>
+                <li><p>Some of them have leaked into each 
+                    other after years of exposure and their shoddy craftsmanship.</p></li>
+                <li><p>The one that distributes the most 
+                    water is sometimes called the master source, that bridges an underground river to the rest of 
+                    the system. The sewers also serve as the city's outlaws refuges. </p></li>
+            </ul>
+        </div>
+        <!--Society-->
+        <button class="collapsible"><h2>Society</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>Shornhelm was once the seat of 
+                    power for the Kingdom of Rivenspire, and it was aptly ruled by the Riven-King.</p></li>
+                <li><p>If no monarch 
+                    is present, then the regency council, the Council of the North takes over.</p></li>
+                <li><p>It is a triumvirate 
+                    of the kingdom's three major houses, Dorell, Montclair, and Tamrith.</p></li>    
+                <li><p>The city acquired the 
+                    epithet of the "Crown City of the North" for its status. </p></li>
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Shornhelm (sometimes spelled Sharnhelm) is one of the nine historical Breton kingdoms in the 
-        province of High Rock, located in the center of Rivenspire. Shornhelm was once the seat of 
-        power for the Kingdom of Rivenspire, and it was aptly ruled by the Riven-King. If no monarch 
-        is present, then the regency council, the Council of the North takes over. It is a triumvirate 
-        of the kingdom's three major houses, Dorell, Montclair, and Tamrith. The city acquired the 
-        epithet of the "Crown City of the North" for its status. 
-    </br>
-</br>
-        <b>Architecture & Layout: </b>Shornhelm is located in the tumultuous landscape of the Kurallian Mountains in north High Rock, 
-        which is known for its rough, tricky terrain and oppressive environment, one that many people 
-        find hard to survive in. The city is built on a hill that overlooks the entire central region 
-        and it even boasts a strong defensive parameter of high walls and watchtowers. Shornhelm is 
-        split between two districts, the lower city where the common folk dwell and trade with one 
-        another, as well as the upper city, where the nobility live. Each of the noble houses has a 
-        manor in the district, as well as the local barracks and even the local wayshrine.
-        
-        The city's substructure is a series of interconnected cisterns that connect to each of the 
-        city's water wells, like a honeycomb of pocketed caches. Some of them have leaked into each 
-        other after years of exposure and their shoddy craftsmanship. The one that distributes the most 
-        water is sometimes called the master source, that bridges an underground river to the rest of 
-        the system. The sewers also serve as the city's outlaws refuges. 
-    </br>
-</br>
-        Shornhelm is neighbored by several settlements, including Markwasten Moor to the southeast, 
-        Old Gate to the northeast, and White Haven to the west.
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>

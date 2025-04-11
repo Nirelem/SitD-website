@@ -4,36 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Farrun</title>
-    <style> 
-        body{
-            background-color: #FFEFD5
-        }   
-        p{
-            color:black
-        }
-
-        li{
-            float: left;
-            
-        }
-
-        li a{
-            display: block;
-            color: white;
-            text-align: center;
-            padding:16px;
-            text-decoration: none;
-        }
-
-        li a:hover{
-            background-color: aqua;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <script src="../../../script.js" defer></script>
 </head>
 <body>
+    <!--navbar-->
     <header>
         <nav>
-            <ul style="list-style-type: none;background-color: black; margin: 0; padding: 0; overflow: hidden;">
+            <ul>
                 <li>    <a href="../../../index.html"> Home              </a>  </li>
                 <li>    <a href="../../../map.html"> Map                 </a>  </li>
                 <li>    <a href="../../../logs.html"> Session Logs       </a>  </li> 
@@ -42,34 +21,46 @@
                 <li>    <a href="../../../about.html"> About             </a>  </li>
             </ul>
         </nav>
-        
 
         <h1>  Farrun  </h1>
+        <!--back button-->
+        <div class="city-button">
+            <a href="../../highrock.html">
+                <button class="back-button">Go Back</button>
+            </a>
+        </div>
     </header>
 
-    <button onclick="history.back()" style="margin: 10px;">Go Back</button>
-</br>
-
-<div style="display: inline-block; padding-top: 20px; padding-right: 400px;">
-    <div style="float: left; background-color: #FDF5E6; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); width: 200px; margin:5px; padding: 5px 5px 0px 5px;"> <!--thumbnail-->
+    <!--figure-->
+    <figure class="city-figure">
         <a href="../../../images/farrun.jpg">
-        <img src="../../../images/farrun.jpg" style=" width: 100%;  border:1px solid grey;">
+            <img src="../../../images/farrun.jpg" class="city-image">
         </a>
-        <div>
-        <p style="margin: 0 0 2px 0; font-size: 14px;">Fharun Stronghold, during Orcish rule, 2nd Era in <i>Elder Scrolls Online</i></p>
+        <figcaption class="city-figure-caption">Fharun Stronghold, during Orcish rule, 2nd Era in <i>Elder Scrolls Online</i></figcaption>
+    </figure>
+    <p class="city-figure-text">
+        Farrun (or Fharun) is a northern port city on the north shore of High Rock. 
+        It is known for its icy winters.  
+    </p>
+
+    <div class="container">
+        <!--Quick History-->
+        <button class="collapsible"><h2>Quick History</h2></button>
+        <div class="content"> 
+            <ul class="collapsible-ul">
+                <li><p>The Breton kingdom of Farrun has existed since the First Era.</p></li>   
+                <li><p>By the Second Era it was an Orcish stronghold by the name of Fharun, 
+                    named after the Fharun Clan.</p></li>  
+                <li><p>Fharun returned to being the Breton city-state of Farrun, 
+                    where an unnamed king was known to have fought a war against 
+                    <a href="../skyrim_markers/solitude.html">Solitude</a> 
+                    and its allies some time late in the Third Era.</p></li>
+            </ul>
         </div>
     </div>
 
-    <p style="text-align: justify;">Farrun (or Fharun) is a northern port city on the north shore of High Rock, and one of eight kingdoms 
-        in the province. It is known for its icy winters.  
-        <br>
-        <br>
-        <b>Quick History: </b> The Breton kingdom of Farrun has existed since the First Era. 
-        By the Second Era it was an Orcish stronghold by the name of Fharun, named after the Fharun Clan. At some point after the second Orsinium fell, Fharun returned to being the Breton city-state of Farrun, 
-        where an unnamed king was known to have fought a war against Solitude and its allies some time late in the Third Era.
-    </p>
-</div>
-    <br/>
-    <h6>  Made by NirelemCorp TM  </h6>
+    <footer>
+        <p>Made by NirelemCorp™</p>
+    </footer>
 </body>
 </html>
